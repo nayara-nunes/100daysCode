@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --green: #6a6f4c;
+  --white:#EDE1D2;
+  --beige: #CBB89D;
+  --brownLight:#806044;
+  --font: 'Libre Baskerville', serif;
+
+}
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--beige);
+  font-family: var(--font);
+
+
+}
+img{
+width: 50vw;
+margin-right: 50px;
+}
+
+.card{
+background-color: var(--white);
+padding: 60px;
+margin: 40px;
+border-radius: 10px;
+ 
+
+}
+input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  font-family: var(--font);
+}
+form{
+  display: flex;
+  flex-direction: column;
+
+}
+select {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: var(--font);
+}
+
+button{
+  background-color: var(--green);
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+label{
+  font-family: var(--font);
+  font-size: .8rem;
+}
+h1{
+margin-bottom:10px ;
+
+color: var(--brownLight);
+font-size: 1.5rem;
+text-transform: uppercase;
+}
+
+h3{
+margin-bottom:10px ;
+text-indent: 20px;
+}

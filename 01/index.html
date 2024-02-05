@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <title>Semana do Cultivo</title>
+</head>
+<body>
+  <main>
+    <div>
+      <img src="./img.jpg" alt="">
+
+    </div>
+    <section >
+      <div class="card">
+        <h1>Semana  DA varanda a horta</h1>
+        <h3>Cultivando sabores no seu jardim!</h3>
+       
+
+        <form action="POST">
+          <input type="email" name="email" id="" placeholder="E-mail" required >
+          <input type="text" name="name" placeholder="Nome" required pattern="[A-Za-z\s]+">
+          <input required id="phone" name="phone" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})">
+        
+          <label for="aulas">Qual a aula mais te interessa? </label>
+          <select name="aulas" id="aulas">
+            <option value="Selecione">Selecione</option>
+            <option value="Planejamento e materiais">Planejamento e Materiais </option>
+            <option value="Seleção das melhores plantas">Seleção das Melhores Plantas</option>
+            <option value="Preparação do solo">Preparação do Solo</option>
+            <option value="Plantio e germinação">Plantio e Germinação</option>
+            <option value="Cuidados diários">Cuidados Diários</option>
+      </div>
+
+        </select>
+        <button type="submit">Enviar</button>
+
+
+      </form>
+    </section>
+  </main>
+  
+</body>
+</html>
