@@ -35,8 +35,9 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
 
   ### indice
   
-  1. [Dia 01 - Formulários e Validações](#dia01)
-  2. [Dia 02](#day2)
+  [Dia 01 - Formulário com validação](#dia01)
+  [Dia 02 - Light Mode/Dark Mode ](#dia02) 
+  [Dia 03 - ](#dia03)
 
 
 
@@ -49,7 +50,7 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
 
 
 
-  ## Dia 01
+  ## Dia 01 - Formulários e validações
   
 Hoje, no primeiro dia do Desafio "100 Days of Code", mergulhei no estudo de formulários HTML e implementei uma página Landing Page de Captura com formulário simples com validações básicas. Aqui está um resumo do que foi abordado:
 ### Aprendizados do dia 
@@ -95,3 +96,60 @@ Confira o código-fonte do formulário no arquivo index.html. Nele, você encont
 
 **Próximos passos**
 Este foi apenas o primeiro passo da jornada! Nos próximos dias, pretendo aprofundar meu conhecimento em front-end, explorando novos conceitos e aplicando-os em projetos práticos. Fique ligado para mais atualizações! 💻✨
+
+<hr>
+
+## Dia 02 -
+
+### Aprendizados do dia 
+
+**Revisão propriedades CSS**
+
+* 🎨 Aprofundei-me nas propriedades de CSS, utilizando os tutoriais do w3schools. Consegui abordar uma boa parte das seções básicas e resolvi 60 exercícios, esclarecendo várias dúvidas.
+* 📱 Explorei mais o conceito de Design Responsivo, aprimorando minhas habilidades.
+* 🔄 Reforcei meus conhecimentos em manipulação de DOM.
+* 💡 Como projeto prático, fiz um mini-site para mudar o padrão de cores utilizando manipulação de DOM!
+ 
+ **Projeto**
+ Este projeto é um exemplo simples de como alternar entre temas claro e escuro em uma página da web utilizando JavaScript para manipular o DOM (Document Object Model). Ele demonstra como aplicar estilos dinamicamente, atualizar conteúdo e responder a eventos do usuário para criar uma experiência de usuário personalizada. O código inclui a definição de dois temas diferentes, lightTheme e darkTheme, e a funcionalidade de alternar entre eles ao clicar em um botão. 
+ 
+ ```js 
+const clickButton = document.getElementById('click');
+const rootElement = document.documentElement;
+const h1Element = document.querySelector('h1');
+
+const lightTheme = {
+  '--background-color': '#Efe9e1',
+  '--text-color': '#121212',
+  '--button-background-color': '#E6A4B4',
+  '--button-text':'Dark',
+  '--h1-text': 'Welcome to Light Theme!😵'
+};
+
+const darkTheme = {
+  '--background-color': '#191919',
+  '--text-color': '#Efe9e1',
+  '--button-background-color': '#404B69',
+  '--button-text':'Light',
+  '--h1-text': 'Welcome to Dark Theme!😉'
+  
+};
+
+let isDarkMode = false;
+
+clickButton.addEventListener('click', function() {
+  isDarkMode = !isDarkMode;
+  isDarkMode ? changeTheme(darkTheme) : changeTheme(lightTheme);
+});
+
+function changeTheme(theme) {
+  for (let prop in theme) {
+    rootElement.style.setProperty(prop, theme[prop]);
+  }
+  // Atualiza o texto do botão e do h1 conforme o tema
+  clickButton.textContent = theme['--button-text'];
+  h1Element.textContent = theme['--h1-text'];
+}
+
+
+```
