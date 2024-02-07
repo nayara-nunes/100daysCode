@@ -35,9 +35,9 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
 
   ### indice
   
-  [Dia 01 - Formulário com validação](#dia01)
-  [Dia 02 - Light Mode/Dark Mode ](#dia02) 
-  [Dia 03 - ](#dia03)
+  [Dia 01 - Formulário com validação](#dia01)<br>
+  [Dia 02 - Light Mode/Dark Mode ](#dia02) <br>
+  [Dia 03 - Tela de Login com validação em JavaScript e alternância de modo dark e light](#dia03)<br>
 
 
 
@@ -153,3 +153,73 @@ function changeTheme(theme) {
 
 
 ```
+
+##  Dia 3 -
+
+Neste terceiro dia do meu projeto 100 Days of Code, continuei trabalhando no desenvolvimento de um formulário de login com validações de entrada e adicionei funcionalidades para permitir que o usuário escolha entre os modos claro e escuro.
+
+### Funcionalidades Implementadas
+
+ **Validação de E-mail e Senha**
+
+- Implementei validações para garantir que o e-mail inserido pelo usuário seja válido.
+- Adicionei uma validação para garantir que a senha inserida tenha pelo menos 8 caracteres.
+
+**Modo Claro e Escuro**
+
+- Adicionei um botão de alternância para permitir que os usuários mudem entre os modos claro e escuro.
+- Personalizei o tema da aplicação para cada modo.
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
+### Como Utilizar
+
+1. Clone este repositório para o seu computador.
+2. Abra o arquivo HTML no seu navegador.
+3. Experimente preencher o formulário de login e observe as validações em ação.
+4. Experimente alternar entre os modos claro e escuro para ver a mudança no tema da aplicação.
+
+### Códigos Importantes
+
+ **Validação de E-mail e Senha**
+
+```javascript
+// Função que valida e-mail
+function isEmailValid(email) {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+}
+
+// Função que valida a senha 
+function validatePassword(password, minNumbers) {
+  return password.length >= minNumbers;
+}
+
+```
+**Alternância entre modo Claro e Escuro**
+```const clickButton = document.getElementById('checkbox');
+const rootElement = document.documentElement;
+
+const lightTheme = {
+  // Definição das variáveis de cores para o tema claro
+};
+
+const darkTheme = {
+  // Definição das variáveis de cores para o tema escuro
+};
+
+let isDarkMode = false;
+
+clickButton.addEventListener('change', function() {
+  isDarkMode =! isDarkMode;
+  isDarkMode ? changeTheme(darkTheme) : changeTheme(lightTheme);
+});
+```
+### Próximos Passos 
+* Implementar mais funcionalidades de segurança, como verificação de força de senha.
+* Melhorar a acessibilidade da aplicação para usuários com necessidades especiais. 
+* 
