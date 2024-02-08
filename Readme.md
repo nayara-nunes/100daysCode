@@ -38,6 +38,7 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
   [Dia 01 - Formulário com validação](#dia01)<br>
   [Dia 02 - Light Mode/Dark Mode ](#dia02) <br>
   [Dia 03 - Tela de Login com validação em JavaScript e alternância de modo dark e light](#dia03)<br>
+  [Dia 04 - Crônometro](#dia04)<br>
 
 
 
@@ -50,7 +51,7 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
 
 
 
-  ## Dia 01 - Formulários e validações
+  ## Dia 01 -
   
 Hoje, no primeiro dia do Desafio "100 Days of Code", mergulhei no estudo de formulários HTML e implementei uma página Landing Page de Captura com formulário simples com validações básicas. Aqui está um resumo do que foi abordado:
 ### Aprendizados do dia 
@@ -65,7 +66,7 @@ Hoje, no primeiro dia do Desafio "100 Days of Code", mergulhei no estudo de form
 * Validando o formato do e-mail usando expressões regulares.
 
 **Código do Projeto** 
-Confira o código-fonte do formulário no arquivo index.html. Nele, você encontrará comentários explicativos sobre as implementações realizadas.
+
 
 
 ```html 
@@ -95,15 +96,13 @@ Confira o código-fonte do formulário no arquivo index.html. Nele, você encont
 ```
 
 **Próximos passos**
-Este foi apenas o primeiro passo da jornada! Nos próximos dias, pretendo aprofundar meu conhecimento em front-end, explorando novos conceitos e aplicando-os em projetos práticos. Fique ligado para mais atualizações! 💻✨
+Este foi apenas o primeiro passo da jornada! Nos próximos dias, pretendo aprofundar meu conhecimento em front-end, explorando novos conceitos e aplicando-os em projetos práticos. 💻✨
 
 <hr>
 
 ## Dia 02 -
 
 ### Aprendizados do dia 
-
-**Revisão propriedades CSS**
 
 * 🎨 Aprofundei-me nas propriedades de CSS, utilizando os tutoriais do w3schools. Consegui abordar uma boa parte das seções básicas e resolvi 60 exercícios, esclarecendo várias dúvidas.
 * 📱 Explorei mais o conceito de Design Responsivo, aprimorando minhas habilidades.
@@ -153,6 +152,7 @@ function changeTheme(theme) {
 
 
 ```
+<hr>
 
 ##  Dia 3 -
 
@@ -201,7 +201,8 @@ function validatePassword(password, minNumbers) {
 
 ```
 **Alternância entre modo Claro e Escuro**
-```const clickButton = document.getElementById('checkbox');
+``` javascript
+const clickButton = document.getElementById('checkbox');
 const rootElement = document.documentElement;
 
 const lightTheme = {
@@ -223,3 +224,26 @@ clickButton.addEventListener('change', function() {
 * Implementar mais funcionalidades de segurança, como verificação de força de senha.
 * Melhorar a acessibilidade da aplicação para usuários com necessidades especiais. 
 * 
+<hr>
+
+## Dia 04 - 
+
+**Aprendizados do dia**
+* Hoje o dia foi de estudar sobre lançamento e tratamento de erros, além de explorar as funções de setInterval e setTimeOut. 
+* Como projeto prático, criei um cronômetro básico utilizando HTML, CSS e JavaScript. 
+
+### Projeto 
+Criei um cronômetro simples com três botões: "start", "pause" e stop. O cronômetro inicia com 00:00:00 e pode ser iniciado, pausado e reiniciado conforme necessário. 
+
+### Funcionalidades
+* Start: Inicia o cronômetro a partir de 00:00:00. Se o cronômetro foi previamente parado, ele reinicia do zero.
+* Pause: Pausa o cronômetro, mantendo a contagem atual. O cronômetro pode ser retomado a partir de onde parou pressionando o botão "start".
+* Stop: Para o cronômetro e reinicia a contagem para 00:00:00.
+
+https://github.com/nayara-nunes/100daysCode/assets/68127465/07ae58c0-d190-4c38-b978-ad4c2b78afd4
+
+
+### Próximos passos
+* Incrementar o projeto, criando funcionalidades de podomoro;
+* Gravar quantos podomoros completos
+* Colocar sons;
