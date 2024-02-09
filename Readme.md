@@ -39,6 +39,7 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
   [Dia 02 - Light Mode/Dark Mode ](#dia02) <br>
   [Dia 03 - Tela de Login com validação em JavaScript e alternância de modo dark e light](#dia03)<br>
   [Dia 04 - Crônometro](#dia04)<br>
+  [Dia 05 - TO-DO list](#dia05)<br>
 
 
 
@@ -247,3 +248,39 @@ https://github.com/nayara-nunes/100daysCode/assets/68127465/07ae58c0-d190-4c38-b
 * Incrementar o projeto, criando funcionalidades de podomoro;
 * Gravar quantos podomoros completos
 * Colocar sons;
+
+<hr>
+
+## Dia 5 -
+
+ Este projeto consiste em uma lista de tarefas simples, onde você pode adicionar novas tarefas, marcá-las como concluídas clicando sobre elas e removê-las da lista.
+
+### Funcionalidades
+
+- **Adicionar Tarefa**: Você pode adicionar uma nova tarefa digitando-a no campo de texto e pressionando Enter ou clicando no botão "Adicionar".
+  
+- **Marcar Tarefa como Concluída**: Quando você clica em uma tarefa da lista, ela é marcada como concluída e aparece com uma linha no meio do texto. Clicar novamente na tarefa remove a linha de conclusão.
+  
+- **Remover Tarefa**: Ao lado de cada tarefa, há um botão de lixeira. Clicar neste botão remove a tarefa da lista.
+
+### Uso
+
+- **Adicionar Tarefa**: Digite sua tarefa no campo de texto e pressione Enter ou clique no botão "Adicionar".
+  
+- **Marcar Tarefa como Concluída**: Clique na tarefa que deseja marcar como concluída.
+  
+- **Remover Tarefa**: Clique no ícone da lixeira ao lado da tarefa que deseja remover.
+
+### Como Funciona
+
+O código utiliza JavaScript para adicionar, marcar como concluído e remover tarefas dinamicamente na página. Ele também utiliza o armazenamento local do navegador para salvar as tarefas, permitindo que elas persistam mesmo após a atualização da página.
+
+Design referência: codePen (colocar o link aqui)
+### Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+![alt text](image.png)
+
+<hr>

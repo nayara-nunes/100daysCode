@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gochi Hand', cursive;
+  outline: 0;
+
+}
+.div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#cbb6df 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  padding: 3rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.header{
+  display: flex;
+  justify-content: center;
+gap: 8px;
+
+}
+.container h1{
+  transform: rotate(2deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #8958b5;
+
+  font-size: 1.5rem;
+}
+
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px dashed #bb9fd4;
+  width: 80%;
+  margin-top: 40px;
+  
+}
+ul {
+  list-style-type: none;
+  margin: 40px 10px;
+}
+ul li{
+  font-size: 1.2rem;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+
+  margin: 8px;
+ 
+}
+
+.button{
+  background-color: #d4c2e4;
+  padding: 0;
+  border: none;
+  transform: rotate(4deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #553374;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+.button:hover{
+  background-color: #6f4397;
+  color: #f1f2f3;
+  box-shadow: 0 2px 0 #d4c2e4;
+}
+
+.delete{
+  background-color: transparent;
+  border: none;
+   
+  color: #d47230;
+  cursor: pointer;
+}
