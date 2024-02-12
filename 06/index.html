@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+    
+        <h1>Converter Moedas</h1>
+
+        <input type="number" value="" name="valorEmReal" id="entrada" required autofocus placeholder="R$">
+        <div class="radio">
+          <input
+          type="radio"
+          id='dolar'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Dólar'
+          tabindex="2"
+              /> <label for="dolar">Dólar</label>
+          
+              <input
+          type="radio"
+          id='euro'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Euro'
+          tabindex="3"
+              /> <label for="euro">Euro</label>
+          
+              <input
+          type="radio"
+          id='libra'
+          name="moedaEstrangeira"
+          class="input radio"
+          value='Libra'
+          tabindex="4"
+              /> <label for="libra">Libra</label>
+        </div>
+        
+        <button class="btn">Converter</button>
+       <div class="instrucoes">
+        <p class="aviso">Digite o valor em real R$</p>
+       </div>
+  
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  
+
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+}
+
+
+:root { 
+  --background:#201b2c;
+  --background-card:#2f2841;
+  --white:#f1e8e8;
+  --green:#77ffc0;
+  --greenlight: #00ff88;
+  --purple:#514869;
+  --gray:#f0ffff94;
+  --btn:#2b134b;
+  --span:#e63636;
+};
+.main-clock{
+  width: 100vw;
+  height: 100vh;
+  
+
+  
+}
+.container{
+  width: 40vw;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--background-card);
+  border-radius: 10px;
+  color: var(--gray);
+ box-shadow: 0 10px 40px #00000096;
+ margin-top: 80px;
+}
+h1{
+  margin-top: 40px;
+}
+
+.btn , input[type="number"]{
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 40px #00000096;
+  background-color: var(--gray);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  margin: 30px 0;
+
+
+
+}
+.btn:hover {
+  transform: translateY(-2px); /* Move o botão para cima ao passar o mouse */
+  box-shadow: 0 15px 50px #00000096; /* Aumenta a sombra ao passar o mouse */
+  background-color: var(--greenlight);
+}
+
+.btn:active {
+  transform: translateY(0); /* Reinicia a posição quando o botão é clicado */
+  box-shadow: 0 10px 40px #00000096; /* Retorna a sombra original quando o botão é clicado */
+}
+
+.radio{
+  display: flex;
+  gap: 4px;
+}
+
+.radio label{
+  margin-right:8px ;
+}
+
+
+.instrucoes{
+  background-color: var(--f2f2f2);
+  font-size: 2rem;
+  padding: 20px;
+  border: 1px solid #e63636;
+}

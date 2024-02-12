@@ -284,3 +284,102 @@ Design referência: codePen (colocar o link aqui)
 ![alt text](image.png)
 
 <hr>
+
+## Dia 06 - 
+
+Hoje, estudei sobre objetos e propriedades em JavaScript. Explorei como criar objetos, definir propriedades e métodos, e também como acessar e manipular essas propriedades. Além disso, implementei uma funcionalidade em um dos meus projetos onde eu converto valores da moeda local para outras moedas com base em taxas de câmbio predefinidas.
+
+### Tecnologias utilizadas
+* JavaScript
+* CSS
+* HTML
+
+### Próximos Passos
+
+Uma ideia que tenho para expandir este projeto é integrá-lo com uma API de câmbio para obter taxas de câmbio atualizadas automaticamente. Isso me permitiria manter as informações sempre atualizadas e também aprender sobre o processo de integração de APIs em projetos web.
+Além de implementar a opção inversa.
+
+ **Código**
+
+Aqui está um trecho de código do meu projeto onde faço a conversão de moedas estrangeiras:
+
+```javascript
+const valor = document.querySelector('#entrada');
+const converte = document.querySelector('.btn');
+const mostraValor = document.querySelector('.aviso');
+let moedaSelecionada = document.getElementsByName('moedaEstrangeira');
+
+let valorDolar = 4.95;
+let valorEuro = 5.34;
+let valorLibra = 6.26;
+
+converte.addEventListener('click', function(event){
+  event.preventDefault();
+
+  const valorInput = parseFloat(valor.value);
+
+  if(isNaN(valorInput) || valorInput === 0){
+    console.log('O campo está vazio ou o valor é igual a 0');
+  } else {
+    const valorConvertido = converteValor(valorInput);
+    mostraValor.textContent = valorConvertido;
+    limpaInput();
+  }
+});
+
+let moedaEstrangeira = '';
+
+function converteValor (valorInput){
+  identificaMoeda(moedaSelecionada);
+  let moedaConvertida;
+
+  switch(moedaEstrangeira){
+    case 'Dólar': 
+      moedaConvertida = (valorInput / valorDolar);
+      return moedaConvertida.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+      break;
+    case 'Euro':
+      moedaConvertida = (valorInput / valorEuro);
+      return moedaConvertida.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+      break;
+    case 'Libra':
+      moedaConvertida =  (valorInput / valorLibra);
+      return moedaConvertida.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });
+      break;
+  }
+}
+
+function identificaMoeda(){
+  for(let i = 0; i < moedaSelecionada.length; i++){
+    if(moedaSelecionada[i].checked){
+       moedaEstrangeira = moedaSelecionada[i].value;
+    }
+  }
+}
+
+function limpaInput(){
+  valor.value = '';
+}
+
+```
+Esse trecho de código mostra como estou implementando a funcionalidade de conversão de moedas estrangeiras em um dos meus projetos. Estou utilizando JavaScript para realizar os cálculos e manipular os elementos da página.
+<hr>
+
+## Dia 07 -
+
+Hoje o dia foi de revisar e praticar os conteúdos vistos durante a semana, praticando com uma simples calculadora de IMC. 
+
+### Calculadora de IMC (Índice de Massa Corporal)
+
+Esta é uma calculadora simples de Índice de Massa Corporal (IMC), desenvolvida em JavaScript, HTML e CSS. O IMC é uma medida que estima a quantidade de gordura corporal com base na altura e no peso de uma pessoa. Ele é amplamente utilizado para determinar se alguém está em um peso saudável ou em risco de problemas de saúde relacionados ao peso.
+
+### Funcionamento
+Esta calculadora permite que o usuário insira seu peso (em quilogramas) e altura (em centímetros) e, em seguida, calcula automaticamente o IMC. Com base no IMC calculado, a calculadora classifica o usuário em uma das seguintes categorias, conforme as diretrizes da Organização Mundial da Saúde (OMS):
+
+Abaixo do Peso: IMC menor que 18,5.
+Peso Normal: IMC entre 18,5 e 24,9.
+Sobrepeso: IMC entre 25 e 29,9.
+Obesidade Grau I: IMC entre 30 e 34,9.
+Obesidade Grau II: IMC entre 35 e 39,9.
+Obesidade Grau III (Mórbida): IMC maior ou igual a 40.
+Além disso, a calculadora fornece uma mensagem de aviso se os valores inseridos forem inválidos.
