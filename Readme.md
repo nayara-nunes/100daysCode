@@ -40,6 +40,9 @@ Agradeço por fazer parte dessa jornada incrível! Vamos codificar juntos! 💻�
   [Dia 03 - Tela de Login com validação em JavaScript e alternância de modo dark e light](#dia03)<br>
   [Dia 04 - Crônometro](#dia04)<br>
   [Dia 05 - TO-DO list](#dia05)<br>
+  [Dia 06 - Conversor de moedas](#dia06)<br>
+  [Dia 07 - Calculadora IMC](#dia07)
+  [Dia 08 - Aplicação de Controle de despesas](#dia08)🚧<br>
 
 
 
@@ -383,3 +386,17 @@ Obesidade Grau I: IMC entre 30 e 34,9.
 Obesidade Grau II: IMC entre 35 e 39,9.
 Obesidade Grau III (Mórbida): IMC maior ou igual a 40.
 Além disso, a calculadora fornece uma mensagem de aviso se os valores inseridos forem inválidos.
+
+<hr>
+
+## Dia 08 - 🚧
+
+Hoje iniciei uma aplicação de controle de despesas, utilizando HTML, CSS e JS praticando e consolidando os conceitos aprendidos de DOM, manipulação e armazenamento em LocalStorage.
+
+### Funcionalidades
+
+- Adicionar despesas
+- Adicionar receitas
+- Atualização automática do saldo atual 
+- Visualização do resumo das despesas totais e receitas totais;
+- Manter o controle salvo graças o armazenamento em LocalStorage. 
