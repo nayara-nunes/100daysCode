@@ -34,3 +34,5 @@ const init = ()=>{
 }
 
 init()
+
+console.log(object)
